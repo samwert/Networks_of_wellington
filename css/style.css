@@ -15,6 +15,10 @@ p{
 
 	color: white;
 }
+.gap{
+  width: 100%;
+  height: 40px;
+}
 
 
 
@@ -33,14 +37,28 @@ section{
 }
 
 header{
-	background-color:  #f7cac9 ;
+	background-color:  #107896 ;
 	color: white; /* more readable on an orange background */
 	padding-top: 50px;
 	padding-bottom: 50px;
 	text-align:center;
+ font-family: serif;
 }
 
+.shadow{
+  border-radius:0px 0px 30px 5px;
+   box-shadow: 10px 10px 5px grey;
+}
 
+.noShadow{
+  background-color:  #b7d7e8 ;
+  color: white; /* more readable on an orange background */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align:center;
+ font-family: serif;
+
+}
 
 
 /*nav{
@@ -71,6 +89,7 @@ nav a:hover{
 }
 
 .custom-padding{
+
   padding-top: 25px;
 }
 
@@ -111,7 +130,7 @@ nav a:hover{
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   
   margin: 0 auto;
   padding: 10px 0;
@@ -158,25 +177,37 @@ nav:after {
 .g-row{
 	width: 100%;
 	overflow: hidden;
+  
+
+
 }
 
 .g-row img{
-	width: 100%; /*This makes all images in grids to be the size of their cell */
+	width: 50%; /*This makes all images in grids to be the size of their cell */
+   border-radius: 15px  50px;
+   box-shadow: 10px 10px 5px grey;
+padding: 10px ;
+
+
+ 
+}
+	
+
+.g-30{
+  width: 30%;
+  float: left;
+  margin: : 20px;
 }
 
 .g-50{
-	width: 50%;
-	float: left;
+  width: 50%;
+  float: left;
 }
-
-.g-30{
-	width: 30%;
-	float: left;
+.padded-left{
+  padding-left: 30px;
 }
-
-.g-70{
-	width: 70%;
-	float: left;
+.padded-right{
+  padding-right: 30px;
 }
 
 .show{
